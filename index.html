@@ -1,167 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SGS AND SONS - GST, ITR, PAN, Passport Services in Ludhiana</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-    body{line-height:1.6;color:#333;background:#fff}
-    
-    header{background:#0a2540;color:#fff;padding:80px 20px;text-align:center}
-    header h1{font-size:42px;font-weight:700;margin-bottom:15px}
-    header p{font-size:18px;margin-bottom:25px;opacity:0.9}
-    .btn{background:#ffb400;color:#0a2540;padding:14px 32px;text-decoration:none;border-radius:6px;font-weight:700;display:inline-block}
-    
-    section{padding:60px 20px;max-width:1200px;margin:auto}
-    h2{text-align:center;font-size:34px;color:#0a2540;margin-bottom:12px}
-    .subtitle{text-align:center;color:#666;margin-bottom:50px;font-size:16px}
-    
-    .bg-gray{background:#f7f9fc}
-    
-    /* Service Grid - like your image */
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-    .service-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:25px;transition:0.3s}
-    .service-card:hover{box-shadow:0 8px 20px rgba(0,0,0,0.1);transform:translateY(-3px)}
-    .service-card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:18px}
-    .service-card h3{font-size:20px;color:#0a2540;margin-bottom:8px}
-    .service-card .desc{color:#666;font-size:14px;margin-bottom:15px;min-height:40px}
-    .service-card .price{font-size:22px;font-weight:700;color:#ffb400;margin-bottom:15px}
-    .service-card .btn-small{background:#0a2540;color:#fff;padding:10px 20px;font-size:14px;border-radius:5px;text-decoration:none;display:inline-block}
-    
-    /* How it works */
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
-    .step h3{font-size:22px;color:#ffb400;margin-bottom:10px}
-    
-    footer{background:#0a2540;color:#fff;text-align:center;padding:30px 20px}
-    .contact-info{margin:8px 0}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS AND SONS - GST, ITR, PAN Services Ludhiana</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: #ffffff; color: #333; }
+
+        header {
+            background: #1B262C;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        header .logo { display: flex; align-items: center; gap: 12px; }
+        header .logo-icon { width: 42px; height: 42px; background: #FFD700; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #1B262C; font-weight: 800; font-size: 16px; }
+        header h1 { font-size: 22px; }
+        header nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+
+        .hero {
+            background: #ffffff;
+            color: #1B262C;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 3px solid #1B262C;
+        }
+        .hero h2 { font-size: 40px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; margin-bottom: 25px; }
+        .btn {
+            background: #1B262C;
+            color: #ffffff;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        .services h3 { font-size: 32px; margin-bottom: 10px; color: #1B262C; }
+        .price-box {
+            background: #ffffff;
+            border: 2px solid #1B262C;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 420px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .price { font-size: 38px; color: #1B262C; font-weight: 800; }
+
+        footer {
+            background: #1B262C;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        footer p { margin: 5px 0; }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1>Your paperwork, <br>properly handled.</h1>
-  <p>We provide assistance for GST, ITR, PAN, Passport, Accounting & Govt Services</p>
-  <a href="https://wa.me/917293454000" class="btn">TALK TO US</a>
-</header>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">SGS</div>
+            <h1>SGS AND SONS</h1>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section>
-  <h2>Essential services. <br>One reliable office.</h2>
-  <p class="subtitle">We help you file returns, apply for documents, and stay compliant.</p>
-  
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" alt="GST">
-      <h3>GST Registration</h3>
-      <p class="desc">New GST Registration with Certificate</p>
-      <div class="price">₹2,699</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=600" alt="ITR">
-      <h3>Income Tax Return</h3>
-      <p class="desc">Individual, Business, Capital Gain Filing</p>
-      <div class="price">₹999 onwards</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc332e?w=600" alt="PAN">
-      <h3>PAN Card Apply</h3>
-      <p class="desc">New PAN Card with 7 Days Delivery</p>
-      <div class="price">₹199</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1556740748-887f6717faa9?w=600" alt="Udyam">
-      <h3>Udyam Registration</h3>
-      <p class="desc">MSME Certificate for Business Benefits</p>
-      <div class="price">₹299</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600" alt="HSRP">
-      <h3>HSRP Number Plate</h3>
-      <p class="desc">High Security Number Plate Booking</p>
-      <div class="price">₹299</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600" alt="DARPAN">
-      <h3>DARPAN Registration</h3>
-      <p class="desc">NGO DARPAN for Govt Funding</p>
-      <div class="price">₹799</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1521791135362-762ffd9764c8?w=600" alt="Passport">
-      <h3>Passport Appointment</h3>
-      <p class="desc">Form Fill + Appointment Booking</p>
-      <div class="price">₹2,799</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=600" alt="Voter">
-      <h3>Voter Card Registration</h3>
-      <p class="desc">New Voter ID / Address Change</p>
-      <div class="price">₹199</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Accounting">
-      <h3>Accounting</h3>
-      <p class="desc">Bookkeeping + GST Filing Monthly</p>
-      <div class="price">₹2,999 /month</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-    
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600" alt="GST Monthly">
-      <h3>GST Monthly Filing</h3>
-      <p class="desc">GSTR-1 + GSTR-3B Full Compliance</p>
-      <div class="price">₹1,499 /month</div>
-      <a href="https://wa.me/917293454000" class="btn-small">Get Started</a>
-    </div>
-  </div>
-</section>
+    <section class="hero">
+        <h2>Your paperwork, properly handled.</h2>
+        <p>We provide assistance for GST, ITR, PAN, Passport, Accounting & Govt Services</p>
+        <a href="tel:+91XXXXXXXXXX" class="btn">TALK TO US</a>
+    </section>
 
-<section class="bg-gray">
-  <h2>Less confusion. <br>More clarity.</h2>
-  <div class="steps">
-    <div class="step">
-      <h3>01</h3>
-      <p><b>Tell us what you need</b><br>WhatsApp pe document bhejo</p>
-    </div>
-    <div class="step">
-      <h3>02</h3>
-      <p><b>We do the paperwork</b><br>Expert team handle karegi</p>
-    </div>
-    <div class="step">
-      <h3>03</h3>
-      <p><b>You get it done</b><br>Certificate/Return ghar baithe</p>
-    </div>
-  </div>
-</section>
+    <section class="services" id="services">
+        <h3>Essential services.</h3>
+        <p>One reliable office.</p>
+        <p style="margin: 10px 0 30px;">We help you file returns, apply for documents, and stay compliant.</p>
 
-<section>
-  <h2>Contact Us</h2>
-  <div style="text-align:center">
-    <div class="contact-info"><b>Phone:</b> +91 72934 54000</div>
-    <div class="contact-info"><b>Email:</b> sgsandsons5400@gmail.com</div>
-    <div class="contact-info"><b>Address:</b> Ludhiana, Punjab</div>
-  </div>
-</section>
+        <div class="price-box">
+            <h4>Income Tax Return Filing</h4>
+            <p class="price">₹699 Only</p>
+            <p>Fast & Hassle Free</p>
+        </div>
+    </section>
 
-<footer>
-  <p>© 2026 SGS AND SONS. All Rights Reserved.</p>
-</footer>
+    <footer id="contact">
+        <h4>SGS AND SONS</h4>
+        <p>Shop no 83, Guru Ram Dass Market</p>
+        <p>Dugri Phase 1, Ludhiana, Punjab, India</p>
+        <p>© 2026 SGS AND SONS. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
