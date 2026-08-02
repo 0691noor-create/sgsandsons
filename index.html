@@ -4,39 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SGS AND SONS | GST, ITR & Accounting Experts Ludhiana</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+:root{
+  --primary: #0A1F44; /* Navy Blue */
+  --accent: #FFD700;  /* Gold */
+  --bg: #F5F7FA;      /* Light Grey */
+  --text: #222;
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#F8F8F8;color:#111;line-height:1.6}
-header{background:#000;color:#fff;padding:18px 8%;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.3)}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+header{background:var(--primary);color:#fff;padding:20px 8%;position:sticky;top:0;z-index:100;box-shadow:0 4px 15px rgba(10,31,68,0.2)}
 nav{display:flex;justify-content:space-between;align-items:center}
-nav h1{font-size:22px;font-weight:700;letter-spacing:1px}
+.logo{font-family:'Montserrat',sans-serif;font-size:26px;font-weight:800;letter-spacing:2px;color:var(--accent)}
 nav a{color:#fff;text-decoration:none;margin-left:25px;font-weight:500;transition:0.3s}
-nav a:hover{color:#ccc}
-.hero{background:#000;color:#fff;padding:120px 8% 100px;text-align:center}
-.hero h2{font-size:48px;font-weight:700;margin-bottom:15px}
-.hero p{font-size:18px;color:#ddd;margin-bottom:30px}
-.btn{background:#fff;color:#000;padding:16px 40px;border-radius:50px;font-weight:700;text-decoration:none;display:inline-block;transition:0.3s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 5px 20px rgba(255,255,255,0.3)}
-.section{padding:80px 8%}
-.section-title{text-align:center;font-size:36px;font-weight:700;margin-bottom:50px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-.card{background:#fff;padding:30px;border-radius:15px;box-shadow:0 5px 25px rgba(0,0,0,0.08);transition:0.3s;border:1px solid #eee}
-.card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,0.15)}
-.card h4{font-size:18px;margin-bottom:10px}
-.price{font-size:28px;font-weight:700;color:#000;margin:10px 0}
-.highlight{background:#000;color:#fff;text-align:center;padding:40px;border-radius:20px;max-width:500px;margin:0 auto 50px}
-.highlight .price{color:#fff;font-size:36px}
-footer{background:#000;color:#aaa;text-align:center;padding:50px 8%}
-footer h3{color:#fff;margin-bottom:15px}
-.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 5px 20px rgba(37,211,102,0.4)}
+nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg, var(--primary) 0%, #132E63 100%);color:#fff;padding:130px 8% 110px;text-align:center}
+.hero h2{font-family:'Montserrat',sans-serif;font-size:50px;font-weight:800;margin-bottom:15px}
+.hero p{font-size:18px;color:#E0E0E0;margin-bottom:35px}
+.btn{background:var(--accent);color:var(--primary);padding:17px 45px;border-radius:50px;font-weight:700;text-decoration:none;display:inline-block;transition:0.3s;font-size:16px}
+.btn:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(255,215,0,0.4)}
+.section{padding:90px 8%}
+.section-title{font-family:'Montserrat',sans-serif;text-align:center;font-size:38px;font-weight:800;margin-bottom:55px;color:var(--primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px}
+.card{background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 30px rgba(10,31,68,0.08);transition:0.4s;border-top:4px solid var(--accent)}
+.card:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(10,31,68,0.15)}
+.card h4{font-size:19px;font-weight:600;margin-bottom:12px;color:var(--primary)}
+.price{font-size:30px;font-weight:800;color:var(--primary);margin:12px 0}
+.highlight{background:var(--primary);color:#fff;text-align:center;padding:45px;border-radius:22px;max-width:520px;margin:0 auto 60px;border:2px solid var(--accent)}
+.highlight .price{color:var(--accent);font-size:40px}
+footer{background:var(--primary);color:#ccc;text-align:center;padding:60px 8%}
+footer h3{font-family:'Montserrat',sans-serif;color:var(--accent);margin-bottom:15px;font-size:22px}
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;padding:16px 22px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 6px 25px rgba(37,211,102,0.4);z-index:99}
 </style>
 </head>
 <body>
 
 <header>
 <nav>
-<h1>SGS AND SONS</h1>
+<h1 class="logo">SGS AND SONS</h1>
 <div>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
@@ -45,8 +51,8 @@ footer h3{color:#fff;margin-bottom:15px}
 </header>
 
 <section class="hero">
-<h2>Your Business, Our Responsibility</h2>
-<p>GST Filing • ITR • Accounting • Govt Services - All Under One Roof</p>
+<h2>Trusted GST & ITR Experts</h2>
+<p>GST Filing • ITR • Accounting • Govt Services - Ludhiana's No.1</p>
 <a href="tel:7293454000" class="btn">Call Now: 7293454000</a>
 </section>
 
@@ -56,7 +62,7 @@ footer h3{color:#fff;margin-bottom:15px}
 <div class="highlight">
 <h3>Income Tax Return Filing</h3>
 <p class="price">₹599 Only</p>
-<p>Fast & Accurate Filing</p>
+<p>Fast & 100% Accurate Filing</p>
 </div>
 
 <div class="grid">
@@ -72,13 +78,4 @@ footer h3{color:#fff;margin-bottom:15px}
 </section>
 
 <footer id="contact">
-<h3>SGS AND SONS</h3>
-<p>Shop no 83, Guru Ram Dass Market, Dugri Phase 1, Ludhiana</p>
-<p>Contact: 7293454000 | Email: sgsandsons5400@gmail.com</p>
-<p style="margin-top:20px;font-size:12px">© 2026 SGS AND SONS. All Rights Reserved.</p>
-</footer>
-
-<a href="https://wa.me/917293454000" class="whatsapp">WhatsApp</a>
-
-</body>
-</html>
+<h3
